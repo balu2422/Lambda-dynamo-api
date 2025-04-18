@@ -1,10 +1,10 @@
 terraform {
   required_version = ">= 1.1.0"
   backend "s3" {
-    bucket         = "techopsbucket123"
-    key            = "vpcec2/terraform.tfstate9"
+    bucket         = "2-tier-architecture-modules"
+    key            = "tf/state2"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "demo_table123"
+    dynamodb_table = "2-tier-architecture-modules-table"
   }
 }
