@@ -30,8 +30,8 @@ module "lambda" {
   add_user_function_name  = "AddUserFunction"
   get_user_function_name  = "GetUserFunction"
   lambda_role_arn         = module.iam.lambda_role_arn
-  add_user_zip_file       = "add_user.zip"
-  get_user_zip_file       = "get_user.zip"
+  add_user_zip_file       = "./add_user.zip"
+  get_user_zip_file       = "./get_user.zip"
   dynamodb_table_name     = module.dynamodb.dynamodb_table_name
 }
 
