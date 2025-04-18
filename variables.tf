@@ -16,15 +16,6 @@ variable "lambda_role_arn" {
   type        = string
 }
 
-variable "add_user_zip_file" {
-  description = "Path to the ZIP file containing the add user Lambda function code"
-  type        = string
-}
-
-variable "get_user_zip_file" {
-  description = "Path to the ZIP file containing the get user Lambda function code"
-  type        = string
-}
 
 variable "api_name" {
   description = "Name of the API Gateway"
